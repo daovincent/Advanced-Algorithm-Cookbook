@@ -4,7 +4,7 @@
 ## BFS
 ![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
 ## DFS
-
+![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
 
 ## Dijkstra
 
