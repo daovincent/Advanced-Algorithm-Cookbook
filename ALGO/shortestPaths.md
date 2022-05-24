@@ -7,8 +7,8 @@
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
 
 ## Dijkstra
-![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978740365374947368/Dijkstra_Animation.gif)
 Shortest path from **one** node to **all** nodes
+![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978740365374947368/Dijkstra_Animation.gif)
 
 ## Bellman-Ford
 
