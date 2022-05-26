@@ -85,6 +85,8 @@ function BFS(G, s0)
 - when d[s] takes a value, it is the weight from s0 to s
 
 In order to get the shortest path : 
+- Initialise an array of predecesors (all null at first)
+- In the "If" before the Enqueue, predecessor of [t] is s
 
 # Dijkstra
 
@@ -133,6 +135,7 @@ return π, d
 ## Bellman-Ford
 
 Shortest path from **one** node to **all** nodes, negative edges **allowed**
+
 ![Alt_Text](https://cdn.discordapp.com/attachments/763805435140505660/979412723232305162/output-onlinegiftools.gif)
 
 ## Floyd-Warshall 
