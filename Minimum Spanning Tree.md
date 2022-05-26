@@ -8,6 +8,7 @@
 - Partitions are just splitting a set into subsets.
 
 ## Union & Find
+The idea is to create graphs / trees while compressing the paths to get from a node to another
 ### Pseudo code with Complexity
 #### Arrays
 ```
