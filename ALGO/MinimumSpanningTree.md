@@ -10,8 +10,8 @@
 
 ### Complexity 
 (Same as Dijkstra's algorithm)
-- O(|V|2) is we use an array for d (distance)
-- O(|E| log |V|) if we use a priority queue, because of the updates
+- O(|V|2) is we use an **array for d** (distance)
+- O(|E| log |V|) if we use a **priority queue**, because of the updates
 
 ### Pseudo code
 ```
@@ -28,5 +28,25 @@ function Prim(G):
     for s,w−→ t in E do
       if w < d[t] then
         d[t], π[t] = w, s
+  return T
+```
+
+## Kruskal’s algorithm
+
+### Complexity
+- O(|E| log |E|) = O(|E| log |V|) for sorting (as |V| ≤ |E|²)
+- O(|E| log∗|E|) for the union & find operations
+So the **bottleneck** is the **sorting preprocess**, costing O(|E| log |V|)
+
+### Pseudo code
+```
+function Kruskal(G):
+  Sort the edges by increasing weight
+  π, h = init(V)
+  T = ∅
+  for s − t in increasing weight order do
+    if find(x,π) != find(y,π) then
+      Add s − t to T
+      union(x,y,π,h)
   return T
 ```
