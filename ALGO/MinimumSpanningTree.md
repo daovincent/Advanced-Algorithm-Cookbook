@@ -14,17 +14,17 @@
 
 ### Pseudo code
 ```
-function Prim(G)
+function Prim(G):
   for s vertex of G do
     d[s], π[s] = +∞, ∅
   Choose a vertex s0 and set d[s0] = 0
   todo = all vertices
   T = ∅
-  while todo 6= ∅ do
+  while todo != ∅ do
     s = Extract the element of todo that minimizes d
-    if s 6= s0 then
+    if s != s0 then
       Add s − π[s] to T
-    for sw−→ t in E do
+    for s,w−→ t in E do
       if w < d[t] then
         d[t], π[t] = w, s
   return T
