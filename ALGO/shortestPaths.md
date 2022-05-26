@@ -61,6 +61,31 @@ Same algorythm, same complexity
 ## BFS ( Breadth-First Search Algorithm )
 ![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
 
+### Complexity 
+- Matrix : O ( n²)
+- Adjacency list : O ( n + e )
+
+### Pseudo code
+```
+function BFS(G, s0)
+  for s vertex of G do
+    d[s] = +∞
+  d[s0] = 0
+  todo = Queue(s0)
+  while todo 6= ∅ do
+    s = Dequeue(todo)
+    for t successor of s do
+      if d[t] == +∞ then
+        d[t] = d[s] + 1
+        Enqueue(todo, t)
+  return d
+```
+- This algorithm computes the shortest weights (=distance)
+- d[s] is +∞ while s is not visited
+- when d[s] takes a value, it is the weight from s0 to s
+
+In order to get the shortest path : 
+
 ## Dijkstra
 Shortest path from **one** node to **all** nodes
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978740365374947368/Dijkstra_Animation.gif)
