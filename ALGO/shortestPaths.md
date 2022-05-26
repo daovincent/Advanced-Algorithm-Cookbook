@@ -68,7 +68,7 @@ Shortest path from **one** node to **all** nodes
 ## Bellman-Ford
 
 Shortest path from **one** node to **all** nodes, negative edges **allowed**
-![Alt_Text](https://cdn.discordapp.com/attachments/950543000562462742/979412014881468457/BellmanFord_algorithm_example.gif)
+![Alt_Text](https://cdn.discordapp.com/attachments/763805435140505660/979412723232305162/output-onlinegiftools.gif)
 
 ## Floyd-Warshall 
 
