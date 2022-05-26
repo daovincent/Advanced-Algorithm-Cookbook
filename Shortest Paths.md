@@ -1,5 +1,5 @@
 # Shortest Paths
- **Negative cycles** are **never allowed**, otherwise there would be no "shortest path"
+ **Negative cycles** are **never allowed**, otherwise there would be no "shortest path" (Depends on the used algorthim)
 
 # Table of Contents
 1. [Definitions](#Definitions)
