@@ -9,7 +9,11 @@
 5. [Floyd-Warshall](#Floyd-Warshall)
 
 ## Definitions
+- Path : a sequence of edges, where each end vertex of an edge is the starting edge of the next one
+- Circuit : a path that begins and ends at the same vertex.
 - Backward edges are the one linking a vertex to one of its ancestor (or itself) in the forest
+- The strongly connected component (SCC) of a given vertex s is the set of vertices Cs that contains all the vertices such that there is a path from s to t, and a path from t to s.
+
 
 ## DFS ( Depth-first search Algorithm )
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
