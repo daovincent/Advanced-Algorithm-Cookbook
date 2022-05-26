@@ -1,8 +1,6 @@
 # Shortest Paths
 **Negative cycles** are **never allowed**, otherwise there would be no "shortest path"
 
-## BFS ( Breadth-First Search Algorithm )
-![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
 ## DFS ( Depth-first search Algorithm )
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
 ### Complexity 
@@ -27,6 +25,22 @@ function DFS(G)
     if not Visited[s] then
       RecDFS(G,s,Visited)
 ```
+#### DFS Variants 
+##### Color DFS : 
+- Set 3 colors ( states ) for each vertes such as : Not visited / During visit / Visited
+- All vertex are initialized as "Not visited"
+- First line of recursive function : set vertex as "During visit"
+- Last line of recursive function : set vertex as "Visited"
+- Before recursive call in recursive function : if During visit → edge is backwards edge
+
+##### Time DFS : 
+- Set a counter at the start of the function
+- Each vertex has a "start" and an "end" for the time of the visit
+- 
+
+## BFS ( Breadth-First Search Algorithm )
+![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
+
 ## Dijkstra
 Shortest path from **one** node to **all** nodes
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978740365374947368/Dijkstra_Animation.gif)
