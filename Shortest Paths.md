@@ -3,8 +3,8 @@
 
 # Table of Contents
 1. [Definitions](#Definitions)
-2. [DFS](#DFS( Depth-first search Algorithm ))
-3. [BFS](#BFS( Breadth-First Search Algorithm ))
+2. [DFS](#DFS)
+3. [BFS](#BFS)
 4. [Bellman-Ford](#Bellman-Ford)
 5. [Floyd-Warshall](#Floyd-Warshall)
 
@@ -15,7 +15,8 @@
 - The strongly connected component (SCC) of a given vertex s is the set of vertices Cs that contains all the vertices such that there is a path from s to t, and a path from t to s.
 
 
-# DFS ( Depth-first search Algorithm )
+# DFS 
+## Depth-first search Algorithm
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
 ### Complexity 
 n = number of nodes / vertex / sommets
@@ -58,7 +59,8 @@ Same algorythm, same complexity
 - Before the recursive call in the recursive function : check if start of the target node is not set in order to call the recursive function
 - If before recursive call, target Start of target node is set but not End of target node, then it is a backwards edge
 
-# BFS ( Breadth-First Search Algorithm )
+# BFS
+## Breadth-First Search Algorithm
 ![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
 
 ### Complexity 
