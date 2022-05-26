@@ -72,7 +72,7 @@ function BFS(G, s0)
     d[s] = +∞
   d[s0] = 0
   todo = Queue(s0)
-  while todo 6= ∅ do
+  while todo != ∅ do
     s = Dequeue(todo)
     for t successor of s do
       if d[t] == +∞ then
