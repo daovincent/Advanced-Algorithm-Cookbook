@@ -15,6 +15,7 @@
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
 ### Complexity 
 n = number of nodes / vertex / sommets
+
 e = number of edges 
 - Tree : O ( n ) 
 - Matrix : O ( n²)
