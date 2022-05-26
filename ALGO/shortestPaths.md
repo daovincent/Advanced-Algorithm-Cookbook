@@ -86,8 +86,48 @@ function BFS(G, s0)
 
 In order to get the shortest path : 
 
-## Dijkstra
-Shortest path from **one** node to **all** nodes
+# Dijkstra
+
+Shortest path from one node to all nodes (Negative nodes are not allowed)
+
+## Ieiunium explicandum (Quick explanation)
+### Complexity 
+```
+initialization -> O(|V|)
+the updates cost -> O(|E|)
+Minimum extraction :
+ array -> O(|V^2|)
+ heap -> O(|E|log|V|)
+```
+### Explanation x Pseudo Code
+```
+I- prepare a list of that contain distance [d] to some vertex to [-∞]
+II- perpare a list of predecessors [π] to ∅
+III- pick a starting vertex [s0] and set it distnace to 0 [d[s0] = 0]
+IV- prepare a list called todo that contains all the vertices [Todo=[all vertices]]
+V- while [Todo] is not empty 
+  |a- [s]find the element in [Todo] that minimise the distance[d] and remove it from [Todo] 
+  |b- loop throught the edges of s  [s -(w)-> t] in the graph[G]
+      |-if the sum of the distance on [s] and the current weight[w] is less than the distance on [t]
+      |- assign the distance of t to the the sum[d[t] = d[s]+w] and the predecessor of [t] to [s]  [π[t] = s]
+VII- return π,d       
+```
+### Pure Pseudo Code 
+```
+Dijktra(G,s0) :
+ for v in vertices of G :	
+   d[v] = -∞
+   π[v] = ∅
+ Todo = [all vertices of G]
+ While Todo !=  ∅ :
+  s = extract element that minimise d in Todo
+  for s-(w)->t in Edgs of s:
+   if d[s]+w < d[t]:
+     d[t] = d[s]+w
+     π[t] = t
+return π, d    	    
+```
+### Gif
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978740365374947368/Dijkstra_Animation.gif)
 
 ## Bellman-Ford
