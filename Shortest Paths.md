@@ -14,7 +14,7 @@
 - Backward edges are the one linking a vertex to one of its ancestor (or itself) in the forest
 - The strongly connected component (SCC) of a given vertex s is the set of vertices Cs that contains all the vertices such that there is a path from s to t, and a path from t to s.
 
-<a name="DFS"/>
+<a name="DFS"></a>
 # DFS (Depth-first search Algorithm)
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
 ### Complexity 
@@ -57,7 +57,7 @@ Same algorythm, same complexity
 - At the end of the recursive function : End of vertex = counter then increment counter
 - Before the recursive call in the recursive function : check if start of the target node is not set in order to call the recursive function
 - If before recursive call, target Start of target node is set but not End of target node, then it is a backwards edge
-<a name="BFS"/>
+<a name="BFS"></a>
 # BFS(Breadth-First Search Algorithm)
 ![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
 
