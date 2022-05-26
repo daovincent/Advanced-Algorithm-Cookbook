@@ -7,7 +7,7 @@
 - A minimal spanning tree in a graph is a spanning tree of minimal weight
 
 ## Prim's algorithm
-
+TL;DR : Select starting node and then always take the edge with the smallest weight from selected nodes
 ### Complexity 
 (Same as Dijkstra's algorithm)
 - O(|V|2) is we use an **array for d** (distance)
@@ -30,6 +30,8 @@ function Prim(G):
         d[t], π[t] = w, s
   return T
 ```
+### Gif 
+![Alt Text](https://gfycat.com/fortunateshrillhen)
 
 ## Kruskal’s algorithm
 
