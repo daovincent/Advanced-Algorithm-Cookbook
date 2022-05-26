@@ -31,7 +31,14 @@ function Prim(G):
   return T
 ```
 ### Gif 
+Faster gif
+
+![Alt Text](https://im2.ezgif.com/tmp/ezgif-2-41ea185801.gif)
+
+Longer gif with extra steps
+
 ![Alt Text](https://cdn.discordapp.com/attachments/958020328037175346/979431978086588436/ezgif-2-d4006ce8b6.gif)
+
 
 ## Kruskal’s algorithm
 
