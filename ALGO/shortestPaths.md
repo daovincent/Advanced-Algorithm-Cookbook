@@ -1,5 +1,14 @@
 # Shortest Paths
-- **Negative cycles** are **never allowed**, otherwise there would be no "shortest path"
+ **Negative cycles** are **never allowed**, otherwise there would be no "shortest path"
+
+# Table of Contents
+1. [Definitions](#Definitions)
+2. [DFS](#DFS)
+3. [BFS](#BFS)
+4. [Bellman-Ford](#Bellman-Ford)
+5. [Floyd-Warshall](#Floyd-Warshall)
+
+## Definitions
 - Backward edges are the one linking a vertex to one of its ancestor (or itself) in the forest
 
 ## DFS ( Depth-first search Algorithm )
