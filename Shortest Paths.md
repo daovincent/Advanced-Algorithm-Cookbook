@@ -4,7 +4,7 @@
 # Table of Contents
 1. [Definitions](#Definitions)
 2. [DFS](##DFS ( Depth-first search Algorithm ))
-3. [BFS](## BFS ( Breadth-First Search Algorithm ))
+3. [BFS](##BFS ( Breadth-First Search Algorithm ))
 4. [Bellman-Ford](#Bellman-Ford)
 5. [Floyd-Warshall](#Floyd-Warshall)
 
