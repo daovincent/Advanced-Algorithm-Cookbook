@@ -5,6 +5,26 @@
 - Spanning Tree : a undirected graph is a subset of its edges that forms a tree connecting all vertices
 - The weight of a spanning tree is the sum of the weights of its edges
 - A minimal spanning tree in a graph is a spanning tree of minimal weight
+- Partitions are just splitting a set into subsets.
+
+## Union & Find
+### Pseudo code 
+#### Arrays
+```
+function Init(n)
+  for i = 0 . . . n − 1 do
+    P[i] = i
+  return P
+  
+function Find(x,P)
+  return P[x]
+
+function Union(x,y,P)
+  for i = 0 . . . n − 1 do
+    if P[i] == P[y] then
+      P[i] = P[x]
+
+```
 
 ## Prim's algorithm
 TL;DR : Select starting node and then always take the edge with the smallest weight from selected nodes
