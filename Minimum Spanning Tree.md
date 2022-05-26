@@ -8,23 +8,28 @@
 - Partitions are just splitting a set into subsets.
 
 ## Union & Find
-### Pseudo code 
+### Pseudo code with Complexity
 #### Arrays
 ```
 function Init(n)
   for i = 0 . . . n − 1 do
     P[i] = i
   return P
-  
+```
+Complexity : O(n)
+```
 function Find(x,P)
   return P[x]
+```
 
+Complexity : O(1)
+```
 function Union(x,y,P)
   for i = 0 . . . n − 1 do
     if P[i] == P[y] then
       P[i] = P[x]
-
 ```
+Complexity : O(n)
 
 ## Prim's algorithm
 TL;DR : Select starting node and then always take the edge with the smallest weight from selected nodes
