@@ -8,7 +8,18 @@
 - Partitions are just splitting a set into subsets.
 
 ## Union & Find
-The idea is to create graphs / trees while compressing the paths to get from a node to another
+The purpose of the Union & Find structure is to efficiently represent a partition.
+
+In other words, we have a set of elements that we want to assemble in order to get groups of elements. We also want to be able to determine which element belongs in which group.
+##### Find
+Find lets us "find" out the group an element belongs to, which is represented by one of it's elements, kind of like a leader (root of a tree for example).
+
+This is also used to "compact" the whole "branch" of a tree, so further calculations will be more efficient.
+##### Union 
+This is the operation that lets us fuse two groupe together. Its purpose is also to make sure trees remain as shallow as possible (deep trees = longer computing time for most algorithms).
+
+That is why when fusing trees with Union, the smaller tree is put under the bigger one.
+
 ### Pseudo code with Complexity
 #### Arrays
 ```
