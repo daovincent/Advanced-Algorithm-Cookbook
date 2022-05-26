@@ -1,8 +1,9 @@
 
 # Table of Contents
-1. [TopologicalSort](#Topological sorting)
+1. [TopologicalSort](#toposort)
 
 
+<a name="toposort"></a>
 # Topological sorting
 Find a dependency order in a graph, to do so we will have to use a timed DFS
 ## Ieiunium explicandum (Quick explanation)
