@@ -9,6 +9,7 @@
 ## Prim's algorithm
 
 ### Complexity 
+(Same as Dijkstra's algorithm)
 - O(|V|2) is we use an array for d (distance)
 - O(|E| log |V|) if we use a priority queue, because of the updates
 
