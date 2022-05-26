@@ -1,6 +1,16 @@
 # Advanced-Algorithm-Cookbook
-Advanced Algorthim cookbook is an advanced cheat sheet, for you out there looking for quick access to fast knowledge about algorthims.
-this cook book was written by ESIPE students, and it contains all the algorithmic knowledge they learned in class.
+Advanced algorithms cookbook is an advanced cheat sheet, for you who are looking for a quick access to quick knowledge about algorithms.
+This cookbook was written by ESIPE students, and it contains all the algorithmic knowledge they learned in class.
 
 # Table of content
-1. [DFS_Applications](/DFS_Applications.md)
+1. [Shortest Paths](/Shortest_Paths.md)
+2. [DFS_Applications](/DFS_Applications.md)
+3. [Minimum Spanning Tree](/Minimum_Spanning_Tree.md)
+
+
+
+
+
+
+
+<img src="https://images.newscientist.com/wp-content/uploads/2021/11/24151113/muhammad-ibn-musa-al-khwarizmipri209555722.jpg" height="400">
