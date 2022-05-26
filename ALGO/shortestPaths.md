@@ -1,9 +1,9 @@
 # Shortest Paths
 **Negative cycles** are **never allowed**, otherwise there would be no "shortest path"
 
-## BFS
+## BFS ( Breadth-First Search Algorithm )
 ![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
-## DFS
+## DFS ( Depth-first search Algorithm )
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
 ### Complexity 
 n = number of nodes / vertex / sommets
