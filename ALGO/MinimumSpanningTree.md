@@ -31,7 +31,7 @@ function Prim(G):
   return T
 ```
 ### Gif 
-![Alt Text](https://cdn.discordapp.com/attachments/958020328037175346/979430379356295188/FortunateShrillHen-size_restricted.gif)
+![Alt Text](https://cdn.discordapp.com/attachments/958020328037175346/979431978086588436/ezgif-2-d4006ce8b6.gif)
 
 ## Kruskal’s algorithm
 
