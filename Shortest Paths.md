@@ -90,7 +90,7 @@ In order to get the shortest path :
 
 # Dijkstra
 
-Shortest path from one node to all nodes (Negative nodes are not allowed)
+Shortest path from one node to all nodes (negative nodes are not **allowed**)
 
 ## Ieiunium explicandum (Quick explanation)
 ### Complexity 
@@ -132,14 +132,44 @@ return π, d
 ### Gif
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978740365374947368/Dijkstra_Animation.gif)
 
-## Bellman-Ford
+# Bellman-Ford
+Shortest path from **one** node to **all** nodes, (negative edges **allowed**)
+## Ieiunium explicandum (Quick explanation)
+### Complexity
+```
+Over all complexity for matrices ->  O(|V|^3)
+Over all complexity for listss -> O(|V|x|E|)
 
-Shortest path from **one** node to **all** nodes, negative edges **allowed**
-
+```
+### Explanation x Pseudo Code
+```
+I- loop through all vertices of G and prepare a list that contain the distance[d] to every vertex to[-∞] 
+and a list that containit predecessors [π] to ∅
+II- set the distance of the starting vertex to 0 [d[s0]=0]
+III- loop from 1 to vertices-1
+   |a- loop through all edges x to y [x-(w)->y ] of the graph[G]
+     |-if the the sum of the distance of x[d[x]] and the weight[w] of the edge is less than the the distance of y[d[y]]
+       |-assign the distance of y to the sum of the distance of x and the weight of the edge [d[y]=d[x]+w] 
+       |-assign the predecessor of y to x [π[y]=x]
+IV- return π, d   
+```
+### Pure pseudo Code
+BellManFord(G,s0)
+  for v vertices in G
+    d[v] = -∞
+    π[v] = ∅ 
+  d[s0] = 0
+  loop from 1 to nBVertices-1
+   loop x-(w)->y edges of G;
+    if d[x]+w < d[y]
+      d[y] = d[x]+w
+      π[y] = s
+return π, d
+### Gif
 ![Alt_Text](https://cdn.discordapp.com/attachments/763805435140505660/979412723232305162/output-onlinegiftools.gif)
 
 # Floyd-Warshall
-Shortest path from one node to all nodes, negative edges allowed
+Shortest path from one node to all nodes, (negative edges **allowed**)
 
 ## Ieiunium explicandum (Quick explanation)
 ### Complexity
@@ -149,7 +179,8 @@ Over all complexity -> O(|V|^3)
 ``` 
 ### Explanation x Pseudo Code
 ```
-I- double loop(s,t) through the vertices of G and  prepare a 2d list of that contain  distances [s,t] if [s == t] the distance is 0 else [-∞] and perpare a 2d list of predecessors [π] to ∅
+I- double loop(s,t) through the vertices of G and  prepare a 2d list of that contain  distances [s,t] if [s == t] 
+the distance is 0 else [-∞] and perpare a 2d list of predecessors [π] to ∅
 II- for edges from s to t [s-(w)->] in G if s is diffrent than t than the distance [s, t] is equal to the weight (w)
 and predecessor of s,t is s [π] 
 III- loop from k to the number of verticies-1  
