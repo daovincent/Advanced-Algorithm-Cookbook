@@ -138,6 +138,48 @@ Shortest path from **one** node to **all** nodes, negative edges **allowed**
 
 ![Alt_Text](https://cdn.discordapp.com/attachments/763805435140505660/979412723232305162/output-onlinegiftools.gif)
 
-## Floyd-Warshall 
+# Floyd-Warshall
+Shortest path from one node to all nodes, negative edges allowed
 
-Shortest path between **all** pairs of vertices, negative edges **allowed**
+## Ieiunium explicandum (Quick explanation)
+### Complexity
+```
+Initialization -> O(|V|^2)
+Over all complexity -> O(|V|^3)
+``` 
+### Explanation x Pseudo Code
+```
+I- double loop(s,t) through the vertices of G and  prepare a 2d list of that contain  distances [s,t] if [s == t] the distance is 0 else [-∞] and perpare a 2d list of predecessors [π] to ∅
+II- for edges from s to t [s-(w)->] in G if s is diffrent than t than the distance [s, t] is equal to the weight (w)
+and predecessor of s,t is s [π] 
+III- loop from k to the number of verticies-1  
+   |a- double loop(s,t) and 
+      |- if the distance froom s to t is bigger than the distance from s to k + k to t [d[s,t] > d[s,k] + d[k,t] 
+	|- assign the distance from s to t to the sum of s to k and k to t [d[s,t]=d[s,k]+d[k,t]]
+	|- assign the predecessor of s to t [π[s,t]] to the predecessor of k to t [π[k,t]] 
+IV- return π,d
+```
+### Pure pseudo code 
+```
+FloydWarshall(G):
+  for s,t vertices of G do 
+   if s == t:
+     d[s,t] = 0
+   else:
+    d[s,t] = -∞
+   π[s,t] = ∅ 
+  for s-(w)->t edges of G:
+   if s!=t:
+     d[s,t] = w
+     π[s,t] = s
+  for k from 0 to vertices-1
+    for s,t to vertices-1
+     if d[s,t] > d[s,k] + d[k,t]:
+        d[s,t] d[s,k] + d[k,t]
+	π[s,t] = π[k,t]
+return π,d
+```
+# Gif
+A gif is pointless for this algo just check this video 
+[video Link](https://www.youtube.com/watch?v=4OQeCuLYj-4)
+
