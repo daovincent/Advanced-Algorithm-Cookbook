@@ -41,7 +41,7 @@ Longer gif with extra steps
 
 
 ## Kruskal’s algorithm
-
+TL;DR : Select edges in increasing weight order, as long as it doesn't create a loop
 ### Complexity
 - O(|E| log |E|) = O(|E| log |V|) for sorting (as |V| ≤ |E|²)
 - O(|E| log∗|E|) for the union & find operations
@@ -59,3 +59,5 @@ function Kruskal(G):
       union(x,y,π,h)
   return T
 ```
+### Gif
+![Alt Text](https://cdn.discordapp.com/attachments/958020328037175346/979438187392950312/Kruskal_Algorithm_gif.gif)
