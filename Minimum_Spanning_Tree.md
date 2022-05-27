@@ -44,22 +44,22 @@ That is why when fusing trees with Union, the smaller tree is put under the bigg
 
 ### Pseudo code with Complexity
 #### Arrays
-```
-function Init(n)
+```py
+def Init(n)
   for i = 0 . . . n − 1 do
     P[i] = i
   return P
 ```
 Complexity : O(n)
 
-```
-function Find(x,P)
+```py
+def Find(x,P)
   return P[x]
 ```
 Complexity : O(1)
 
-```
-function Union(x,y,P)
+```py
+def Union(x,y,P)
   for i = 0 . . . n − 1 do
     if P[i] == P[y] then
       P[i] = P[x]
@@ -67,15 +67,15 @@ function Union(x,y,P)
 Complexity : O(n)
 
 #### Trees 
-```
-function Find(x,π)
+```py
+def Find(x,π)
   if π[x] == x then
     return x
   return Find (π[x], π)
 ```
 Complexity : O(height)
-```
-function Union(x,y,π)
+```py
+def Union(x,y,π)
   idx = Find(x, π)
   idy = Find(y, π)
   π[idx] = idy
@@ -88,15 +88,15 @@ Find : Same as Tree but Complexity: O(t log n) without compression and  O(t × l
 Union : Complexity change depending on the used Find function if the find do height compressionit will be  O(t × log∗n)</br> ortherwise O(t log n)
 
 The find can be changed to compress the height here how it's done 
-```
-functin Find(x,π)
+```py
+def Find(x,π)
   if x== π[x]
     return x
   π[x] = Find(x,π)
   return π[x]
 ```
-```
-function Union(x,y,π,h)
+```py
+def Union(x,y,π,h)
   idx = Find(x, π)
   idy = Find(y, π)
   if h[idx] ≤ h[idy] then
@@ -115,8 +115,8 @@ TL;DR : Select starting node and then always take the edge with the smallest wei
 - O(|E| log |V|) if we use a **priority queue**, because of the updates
 
 ### Pseudo code
-```
-function Prim(G):
+```py
+def Prim(G):
   for s vertex of G do
     d[s], π[s] = +∞, ∅
   Choose a vertex s0 and set d[s0] = 0
@@ -149,8 +149,8 @@ TL;DR : Select edges in increasing weight order, as long as it doesn't create a 
 So the **bottleneck** is the **sorting preprocess**, costing O(|E| log |V|)
 
 ### Pseudo code
-```
-function Kruskal(G):
+```py
+def Kruskal(G):
   Sort the edges by increasing weight
   π, h = init(V)
   T = ∅

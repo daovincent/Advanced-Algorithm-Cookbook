@@ -35,8 +35,8 @@ III- loop through all the vertices of the Graph [for s in vertices of G]
 IV- return L 
 ```
 ## Pure pseudo code
-```
-TopoRec(L,v,G,s):
+```py
+def TopoRec(L,v,G,s):
  v[s] = true
  for t successors of s in G:
    if !v[t]:
@@ -44,7 +44,7 @@ TopoRec(L,v,G,s):
  add s to the begging of T
 
 
-TopoWarpper(G):
+def TopoWarpper(G):
   for s vertex in G:
    v[s]= false
   L = []

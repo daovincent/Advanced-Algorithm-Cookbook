@@ -49,8 +49,8 @@ e = number of edges
 - Adjacency list : O ( n + e )
 
 ### Pseudo code
-```
-function RecDFS(G,s,Visited)
+```py
+def RecDFS(G,s,Visited)
   Visited[s] = True
   for t successor of s do
     if not Visited[t] then
@@ -88,8 +88,8 @@ Same algorythm, same complexity
 - Adjacency list : O ( n + e )
 
 ### Pseudo code
-```
-function BFS(G, s0)
+```py
+def BFS(G, s0)
   for s vertex of G do
     d[s] = +∞
   d[s0] = 0
