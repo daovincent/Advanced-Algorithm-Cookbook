@@ -1,12 +1,27 @@
-# Minimum Spanning Tree
+Minimum Spanning Tree
+---
 
-# Table of Contents
-1. [Definitions](#Def)
-2. [Union & Find](#union--find)
-3. [Prim's algorithm](#Prims)
-4. [Kruskal’s algorithm](#kruskals-algorithm)
+Table of Contents
+---
+- [Minimum Spanning Tree](#minimum-spanning-tree)
+- [Table of Contents](#table-of-contents)
+- [Definitions](#definitions)
+- [Union & Find](#union--find)
+      - [Find](#find)
+      - [Union](#union)
+  - [Pseudo code with Complexity](#pseudo-code-with-complexity)
+    - [Arrays](#arrays)
+    - [Trees](#trees)
+    - [Balanced Trees](#balanced-trees)
+- [Prim's algorithm](#prims-algorithm)
+  - [Complexity](#complexity)
+  - [Pseudo code](#pseudo-code)
+  - [Gif](#gif)
+- [Kruskal’s algorithm](#kruskals-algorithm)
+  - [Complexity](#complexity-1)
+  - [Pseudo code](#pseudo-code-1)
+  - [Gif](#gif-1)
 
-<a name="Def"></a>
 ## Definitions
 - Tree : a connected acyclic graph
 - Spanning Tree : a undirected graph is a subset of its edges that forms a tree connecting all vertices
@@ -91,7 +106,7 @@ function Union(x,y,π,h)
   else
     π[idy] = idx
 ```
-<a name="Prims"></a>
+
 ## Prim's algorithm
 TL;DR : Select starting node and then always take the edge with the smallest weight from selected nodes
 ### Complexity 

@@ -1,12 +1,36 @@
-# Shortest Paths
+ Shortest Paths
+ ---
  **Negative cycles** are **never allowed**, otherwise there would be no "shortest path" (Depends on the used algorthim)
 
-# Table of Contents
-1. [Definitions](#Definitions)
-2. [DFS](#DFS)
-3. [BFS](#BFS)
-4. [Bellman-Ford](#Bellman-Ford)
-5. [Floyd-Warshall](#Floyd-Warshall)
+Table of Contents
+---
+- [DFS (Depth-first search Algorithm)](#dfs-depth-first-search-algorithm)
+    - [Complexity](#complexity)
+    - [Pseudo code](#pseudo-code)
+      - [DFS Variants](#dfs-variants)
+        - [Color DFS :](#color-dfs-)
+        - [Time DFS :](#time-dfs-)
+- [BFS(Breadth-First Search Algorithm)](#bfsbreadth-first-search-algorithm)
+    - [Complexity](#complexity-1)
+    - [Pseudo code](#pseudo-code-1)
+- [Dijkstra](#dijkstra)
+  - [Ieiunium explicandum (Quick explanation)](#ieiunium-explicandum-quick-explanation)
+    - [Complexity](#complexity-2)
+    - [Explanation x Pseudo Code](#explanation-x-pseudo-code)
+    - [Pure Pseudo Code](#pure-pseudo-code)
+    - [Gif](#gif)
+- [Bellman-Ford](#bellman-ford)
+  - [Ieiunium explicandum (Quick explanation)](#ieiunium-explicandum-quick-explanation-1)
+    - [Complexity](#complexity-3)
+    - [Explanation x Pseudo Code](#explanation-x-pseudo-code-1)
+    - [Pure pseudo Code](#pure-pseudo-code-1)
+    - [Gif](#gif-1)
+- [Floyd-Warshall](#floyd-warshall)
+  - [Ieiunium explicandum (Quick explanation)](#ieiunium-explicandum-quick-explanation-2)
+    - [Complexity](#complexity-4)
+    - [Explanation x Pseudo Code](#explanation-x-pseudo-code-2)
+    - [Pure pseudo code](#pure-pseudo-code-2)
+    - [Gif](#gif-2)
 
 ## Definitions
 - Path : a sequence of edges, where each end vertex of an edge is the starting edge of the next one
@@ -14,7 +38,6 @@
 - Backward edges are the one linking a vertex to one of its ancestor (or itself) in the forest
 - The strongly connected component (SCC) of a given vertex s is the set of vertices Cs that contains all the vertices such that there is a path from s to t, and a path from t to s.
 
-<a name="DFS"></a>
 # DFS (Depth-first search Algorithm)
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978739577386856468/Depth-First-Search.gif)
 ### Complexity 
@@ -57,7 +80,6 @@ Same algorythm, same complexity
 - At the end of the recursive function : End of vertex = counter then increment counter
 - Before the recursive call in the recursive function : check if start of the target node is not set in order to call the recursive function
 - If before recursive call, target Start of target node is set but not End of target node, then it is a backwards edge
-<a name="BFS"></a>
 # BFS(Breadth-First Search Algorithm)
 ![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
 

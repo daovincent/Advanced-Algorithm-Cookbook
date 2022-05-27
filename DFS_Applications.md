@@ -1,9 +1,15 @@
+DFS Application
+---
 
-# Table of Contents
-1. [TopologicalSort](#toposort)
+Table of Contents
+---
+- [Topological sorting](#topological-sorting)
+  - [Ieiunium explicandum (Quick explanation)](#ieiunium-explicandum-quick-explanation)
+    - [Complexity](#complexity)
+    - [Explanation x Pseudo Code](#explanation-x-pseudo-code)
+  - [Pure pseudo code](#pure-pseudo-code)
 
 
-<a name="toposort"></a>
 # Topological sorting
 Find a dependency order in a graph, to do so we will have to use a timed DFS
 ## Ieiunium explicandum (Quick explanation)
