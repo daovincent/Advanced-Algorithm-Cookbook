@@ -2,9 +2,9 @@
 
 # Table of Contents
 1. [Definitions](#Definitions)
-2. [Union & Find](#Union & Find)
-3. [Prim's algorithm](#Prim's algorithm)
-4. [Kruskal’s algorithm](#Kruskal’s algorithm)
+2. [Union & Find](#Union_&_Find)
+3. [Prim's algorithm](#Prim's_algorithm)
+4. [Kruskal’s algorithm](#Kruskal’s_algorithm)
 
 ## Definitions
 - Tree : a connected acyclic graph
