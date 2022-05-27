@@ -1,11 +1,12 @@
 # Minimum Spanning Tree
 
 # Table of Contents
-1. [Definitions](#Definitions)
+1. [Definitions](#Def)
 2. [Union & Find](#union--find)
-3. [Prim's algorithm](#Prims-algorithm)
+3. [Prim's algorithm](#Prims)
 4. [Kruskal’s algorithm](#kruskals-algorithm)
 
+<a name="Def"></a>
 ## Definitions
 - Tree : a connected acyclic graph
 - Spanning Tree : a undirected graph is a subset of its edges that forms a tree connecting all vertices
@@ -67,8 +68,10 @@ function Union(x,y,π)
 Complexity: O(height)
 
 #### Balanced Trees
-Init : Same as tree but with height parameter
-Find : Same as Tree but Complexity: O(t log n) 
+Init : Same as tree but with height parameter </br>
+Find : Same as Tree but Complexity: O(t log n) without compression and  O(t × log∗n) with commpression</br>
+Union : Complexity change depending on the used Find function if the find do height compressionit will be  O(t × log∗n)</br> ortherwise O(t log n)
+
 The find can be changed to compress the height here how it's done 
 ```
 functin Find(x,π)
@@ -88,7 +91,7 @@ function Union(x,y,π,h)
   else
     π[idy] = idx
 ```
-
+<a name="Prims"></a>
 ## Prim's algorithm
 TL;DR : Select starting node and then always take the edge with the smallest weight from selected nodes
 ### Complexity 
