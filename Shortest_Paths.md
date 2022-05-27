@@ -176,6 +176,7 @@ III- loop from 1 to vertices-1
 IV- return π, d   
 ```
 ### Pure pseudo Code
+```
 BellManFord(G,s0)
   for v vertices in G
     d[v] = -∞
@@ -187,6 +188,7 @@ BellManFord(G,s0)
       d[y] = d[x]+w
       π[y] = s
 return π, d
+```
 ### Gif
 ![Alt_Text](https://cdn.discordapp.com/attachments/763805435140505660/979412723232305162/output-onlinegiftools.gif)
 
