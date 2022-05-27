@@ -21,7 +21,13 @@ Table of Content
   - [Improving path](#improving-path)
   - [Pseudo code](#pseudo-code)
   - [Examples with steps](#examples-with-steps)
-    - [Step 1](#step-1)
+    - [Steps](#steps)
+  - [Improvement of the Pseudo Code - Edmond-Karp Algo](#improvement-of-the-pseudo-code---edmond-karp-algo)
+    - [Complexity:](#complexity-1)
+- [Minimum Cut in a graph](#minimum-cut-in-a-graph)
+  - [Minimum cut](#minimum-cut)
+    - [The maximum flow and its residual graph](#the-maximum-flow-and-its-residual-graph)
+    - [The minimum cut discriminated](#the-minimum-cut-discriminated)
 
 # Definitions
 - #### Connected graph: A connected graph is graph that is connected in the sense of a topological space, i.e., there is a path from any point to any other point in the graph
@@ -109,7 +115,52 @@ def FordFulkerson(G, s, p):
 
 ## Examples with steps
 
-### Step 1
+### Steps
 
 ![step 1](Images/Max_flow/step1.gif)
 
+Theses steps is giving you the idea. Every times, you find a path, you take the minValue of the path, and you update the graph
+
+Between every steps, you create a new residual network
+
+
+## Improvement of the Pseudo Code - Edmond-Karp Algo
+Edmonds-Karp algorithm is an improvement on Ford-Fulkerson, where the improving path is computed using a BFS
+
+
+```py
+def EdmondKarp(G, s, p):
+    f = null flow (0 for all edge)
+    while there is an improving path do :
+        P = improving path of Gf with a BFS
+        λ = minvalue of P
+        update f by adding λ on edges in P
+    return f
+```
+
+### Complexity: 
+The complexity of Edmond Karp alogithm has a complexity of $O(|V| × |E|^2)$
+
+
+# Minimum Cut in a graph
+In the same settings, a cut in a graph is a collection of edges whose
+removal disconnect s from t
+
+![minCut1](Images/Max_flow/minCut_1.png) ![minCut1](Images/Max_flow/minCut_2.png)
+
+## Minimum cut
+The minimum cut is the cut that minimizes the sum of the weights
+
+**Theorem**: value of the minimum cut = value of the maximum flow
+
+To find the minimum cut, nothing more easy !
+
+Take the residual network of the maximum flow, and take every edges that separated them
+
+### The maximum flow and its residual graph
+
+![minCut1](Images/Max_flow/minCut_3.png) ![minCut1](Images/Max_flow/minCut_4.png)
+
+### The minimum cut discriminated
+
+![minCut1](Images/Max_flow/minCut_6.png) ![minCut1](Images/Max_flow/minCut_5.png)
