@@ -68,7 +68,15 @@ Complexity: O(height)
 
 #### Balanced Trees
 Init : Same as tree but with height parameter
-Find : Same as Tree but Complexity: O(t log n)
+Find : Same as Tree but Complexity: O(t log n) 
+The find can be changed to compress the height here how it's done 
+```
+functin Find(x,π)
+  if x== π[x]
+    return x
+  π[x] = Find(x,π)
+  return π[x]
+```
 ```
 function Union(x,y,π,h)
   idx = Find(x, π)
