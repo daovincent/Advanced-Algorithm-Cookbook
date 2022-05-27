@@ -10,7 +10,7 @@ Table of Contents
       - [DFS Variants](#dfs-variants)
         - [Color DFS :](#color-dfs-)
         - [Time DFS :](#time-dfs-)
-- [BFS(Breadth-First Search Algorithm)](#bfsbreadth-first-search-algorithm)
+- [BFS (Breadth-First Search Algorithm)](#bfs-breadth-first-search-algorithm)
     - [Complexity](#complexity-1)
     - [Pseudo code](#pseudo-code-1)
 - [Dijkstra](#dijkstra)
