@@ -80,7 +80,7 @@ Same algorythm, same complexity
 - At the end of the recursive function : End of vertex = counter then increment counter
 - Before the recursive call in the recursive function : check if start of the target node is not set in order to call the recursive function
 - If before recursive call, target Start of target node is set but not End of target node, then it is a backwards edge
-# BFS(Breadth-First Search Algorithm)
+# BFS (Breadth-First Search Algorithm)
 ![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
 
 ### Complexity 
