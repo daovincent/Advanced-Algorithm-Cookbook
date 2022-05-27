@@ -4,7 +4,7 @@ This cookbook was written by ESIPE students, and it contains all the algorithmic
 
 # Table of content
 1. [Shortest Paths](/Shortest_Paths.md)
-2. [DFS_Applications](/DFS_Applications.md)
+2. [DFS Applications](/DFS_Applications.md)
 3. [Minimum Spanning Tree](/Minimum_Spanning_Tree.md)
 
 
