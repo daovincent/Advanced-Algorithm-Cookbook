@@ -8,7 +8,11 @@ Table of Contents
     - [Complexity](#complexity)
     - [Explanation x Pseudo Code](#explanation-x-pseudo-code)
   - [Pure pseudo code](#pure-pseudo-code)
-
+- [SCC (Strongly connected components)](#scc-strongly-connected-components)
+  - [Ieiunium explicandum (Quick explanation)](#ieiunium-explicandum-quick-explanation-1)
+  - [Exemplum](#exemplum)
+  - [Algorithmus](#algorithmus)
+  - [Gif](#gif)
 
 # Topological sorting
 Find a dependency order in a graph, to do so we will have to use a timed DFS
