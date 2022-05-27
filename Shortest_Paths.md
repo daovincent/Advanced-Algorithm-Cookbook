@@ -10,7 +10,7 @@ Table of Contents
       - [DFS Variants](#dfs-variants)
         - [Color DFS :](#color-dfs-)
         - [Time DFS :](#time-dfs-)
-- [BFS(Breadth-First Search Algorithm)](#bfsbreadth-first-search-algorithm)
+- [BFS (Breadth-First Search Algorithm)](#bfs-breadth-first-search-algorithm)
     - [Complexity](#complexity-1)
     - [Pseudo code](#pseudo-code-1)
 - [Dijkstra](#dijkstra)
@@ -80,7 +80,7 @@ Same algorythm, same complexity
 - At the end of the recursive function : End of vertex = counter then increment counter
 - Before the recursive call in the recursive function : check if start of the target node is not set in order to call the recursive function
 - If before recursive call, target Start of target node is set but not End of target node, then it is a backwards edge
-# BFS(Breadth-First Search Algorithm)
+# BFS (Breadth-First Search Algorithm)
 ![Alt Text](https://cdn.discordapp.com/attachments/809911471525331026/964583168873209936/Animated_BFS.gif)
 
 ### Complexity 
@@ -176,6 +176,7 @@ III- loop from 1 to vertices-1
 IV- return π, d   
 ```
 ### Pure pseudo Code
+```
 BellManFord(G,s0)
   for v vertices in G
     d[v] = -∞
@@ -187,6 +188,7 @@ BellManFord(G,s0)
       d[y] = d[x]+w
       π[y] = s
 return π, d
+```
 ### Gif
 ![Alt_Text](https://cdn.discordapp.com/attachments/763805435140505660/979412723232305162/output-onlinegiftools.gif)
 
