@@ -4,7 +4,7 @@
 1. [Definitions](#Definitions)
 2. [Union & Find](#union--find)
 3. [Prim's algorithm](#Prims-algorithm)
-4. [Kruskal’s algorithm](#Kruskal-s-algorithm)
+4. [Kruskal’s algorithm](#kruskals-algorithm)
 
 ## Definitions
 - Tree : a connected acyclic graph
