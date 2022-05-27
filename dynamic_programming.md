@@ -25,7 +25,7 @@ def fib(n: int) -> int:
 ```
 Here the resulting execution tree :
 
-![FiboTree](./images/Dynamic_programming/FiboTree.png)
+![FiboTree](/Images/Dynamic_programming/FiboTree.png)
 
 As you can see we can avoid to repeat a lot of steps by caching them, let’s consider the following algorithm :
 
@@ -48,7 +48,7 @@ def fib(n: int, memo: [int]) -> int:
 
 Let’s take again the tree above and see the step we spare :
 
-![FiboTree](./images/Dynamic_programming/FiboTreeLess.png)
+![FiboTree](/Images/Dynamic_programming/FiboTreeLess.png)
 
 We spared 16 steps out of 24 ! So ⅔ of them which is great. In this case this works great and is easy to understand. Also remember, no solution is perfect and they all have a cost. Here **we trade memory space for time efficiency**. 
 
