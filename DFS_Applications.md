@@ -12,6 +12,7 @@ Table of Contents
   - [Ieiunium explicandum (Quick explanation)](#ieiunium-explicandum-quick-explanation-1)
   - [Exemplum](#exemplum)
   - [Algorithmus](#algorithmus)
+    - [Complexity](#complexity-1)
   - [Gif](#gif)
 
 # Topological sorting
@@ -73,6 +74,7 @@ $Cb = {A,D,B}$</br>
 $Cf = {C,F}$</br>
 
 ## Algorithmus
+
 To find a SCC we will need to run the $Kosaraju’s$ $algorithmus$ or what the teacher like to call it the $Magical$ $algorithmus$ 
 ```
 I- Run a timed-DFS and order the vertices by decreasing end of
@@ -83,5 +85,8 @@ Note : every time the dfs run some values will be computed and you will be savin
 when the dfs finishes you save that sub list in a big a list.
 example -> [[A,D,B], [C,F], [E]]
 ```
+### Complexity
+For matrices : $O(|V^2|)$</br>
+For lists : $O(|V| + |E|)$
 ## Gif
 ![SCCExample2](/Images/DFS_Applications/SCC_example_2.gif)
