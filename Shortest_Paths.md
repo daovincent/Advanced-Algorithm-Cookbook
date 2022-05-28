@@ -231,7 +231,7 @@ FloydWarshall(G):
   for k from 0 to vertices-1
     for s,t to vertices-1
      if d[s,t] > d[s,k] + d[k,t]:
-        d[s,t] d[s,k] + d[k,t]
+        d[s,t] = d[s,k] + d[k,t]
 	π[s,t] = π[k,t]
 return π,d
 ```
