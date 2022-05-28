@@ -143,6 +143,7 @@ Dijktra(G,s0) :
    d[v] = +∞
    π[v] = ∅
  Todo = [all vertices of G]
+ d[s0] = 0
  While Todo !=  ∅ :
   s = extract element that minimise d in Todo
   for s-(w)->t in Edgs of s:
@@ -221,7 +222,7 @@ FloydWarshall(G):
    if s == t:
      d[s,t] = 0
    else:
-    d[s,t] = -∞
+    d[s,t] = +∞
    π[s,t] = ∅ 
   for s-(w)->t edges of G:
    if s!=t:
