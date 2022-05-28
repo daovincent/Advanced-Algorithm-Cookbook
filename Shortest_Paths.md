@@ -2,14 +2,18 @@
  ---
  **Negative cycles** are **never allowed**, otherwise there would be no "shortest path" (Depends on the used algorthim)
 
+TL;DR:
+
+![tldr](Images/Shortest_Paths/conclusion.png)
+
 Table of Contents
 ---
 - [DFS (Depth-first search Algorithm)](#dfs-depth-first-search-algorithm)
     - [Complexity](#complexity)
     - [Pseudo code](#pseudo-code)
       - [DFS Variants](#dfs-variants)
-        - [Color DFS :](#color-dfs-)
-        - [Time DFS :](#time-dfs-)
+        - [Color DFS](#color-dfs)
+        - [Time DFS](#time-dfs)
 - [BFS (Breadth-First Search Algorithm)](#bfs-breadth-first-search-algorithm)
     - [Complexity](#complexity-1)
     - [Pseudo code](#pseudo-code-1)
@@ -66,14 +70,14 @@ function DFS(G)
 #### DFS Variants 
 Same algorythm, same complexity
 
-##### Color DFS : 
+##### Color DFS
 - Set 3 colors ( states ) for each vertes such as : Not visited / During visit / Visited
 - All vertex are initialized as "Not visited"
 - First line of the recursive function : set vertex as "During visit"
 - Last line of the recursive function : set vertex as "Visited"
 - Before the recursive call in recursive function : if During visit → edge is backwards edge
 
-##### Time DFS : 
+##### Time DFS 
 - Set a counter at the start of the function
 - Each vertex has a "start" and an "end" for the time of the visit
 - At start of the recursive function : Start of vertex = counter then increment counter
