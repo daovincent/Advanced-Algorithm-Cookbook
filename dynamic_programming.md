@@ -7,8 +7,10 @@ Memoization = recursion + caching
 ```
 
 With also refer to this approach as the top-down approach, you will understand later why.
-
-## Using memoization with Fibonacci
+`
+# Top-down approach (also known as memoization)
+`
+## Top-down approach (memoization) + Fibonacci
 
 Let’s consider the Fibonacci sequence : U0 =  0, U1 = 1, Un+1 = Un - Un-1. We can code it this way :
 
@@ -62,3 +64,38 @@ To conclude on memoization you should remember :
    2. **Define the recursion**
    3. **Practice the problem, find repetitive pattern**
    4. **Cache this patterns**
+
+# Bottom-up approach (also known as tabulation)
+
+Bottom-up approach (or tabulation) we iteratively compute the solution of the subproblems from the smallest one to the largest one. In other words, in a recursive algorithm we identify the smallest recursion pattern , and we iterate on it indefinitely. 
+
+## Bottom-up approach with Fibonnaci
+It is doable when we easily know which computations are required. So with Fibonacci, it is straightforward : 
+
+```python
+def fib_tab(n):
+   if n <= 1: return n
+   F = [None] * (n+1)
+   F[0], F[1] = 0, 1
+   for i in range(2, n+1):
+      F[i] = F[i-1] + F[i-2]
+   return F[n]
+```
+
+But in most cases the computation is not given just like that. There are more complex and relevant examples like the Knapsack problem. If we find the time to explain it here, we will do it, until now you can simply refer to this article that explaining it too : [Article about, systematic approach to memoization and tabulation](https://betterprogramming.pub/a-systematic-approach-to-dynamic-programming-54902b6b0071).
+
+# To remember
+
+We’ve seen two methods bottom-up and top-down (tabulation and memoization), both of them aim to optimize an already known recursive algorithm by solving smaller subproblems and by either caching their solutions or iterating on them. So keep in mind :
+   1. Find a problem
+   2. **Implement a naive recursive algorithm for this problem** 
+   3. Identify subproblems in your recursive solution 
+   4. Find patterns in them 
+   5. **Cache already computed solution for memoization** 
+   6. **Transform the recursion on a iteration on repetitive computation (often easier to find if you do first the memoization, think of Fibonacci, we iterate with bottom-up, what we cached with memoization)**
+
+A few guidelines :
+   * **Top-down (memoization approach) = recursion + caching** 
+   * **Bottom-up (tabulation) = recursion => iteration** 
+   * **Bottom-up approach is easier to find if you have already find the the top-down one** 
+   * **Always start by solving your problem with a naive recursive algorithm**
