@@ -134,7 +134,7 @@ def Prim(G):
 ### Gif 
 Faster gif
 
-![Alt Text](https://im2.ezgif.com/tmp/ezgif-2-41ea185801.gif)
+![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/980132008271437844/ezgif-2-41ea185801.gif)
 
 Longer gif with extra steps
 
