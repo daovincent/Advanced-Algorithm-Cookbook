@@ -8,9 +8,10 @@ Table of Contents
     - [Complexity](#complexity)
     - [Explanation x Pseudo Code](#explanation-x-pseudo-code)
   - [Pure pseudo code](#pure-pseudo-code)
+  - [Pseudo code commented](#pseudo-code-commented)
 - [SCC (Strongly connected components)](#scc-strongly-connected-components)
   - [Ieiunium explicandum (Quick explanation)](#ieiunium-explicandum-quick-explanation-1)
-  - [Exemplum](#exemplum)
+    - [Exemplum](#exemplum)
   - [Algorithmus](#algorithmus)
     - [Complexity](#complexity-1)
   - [Gif](#gif)
@@ -58,6 +59,38 @@ def TopoWarpper(G):
     TopoRec(L,v,G,s) 
 return L	
 
+```
+
+## Pseudo code commented
+```py
+def TopoRec(L,v,G,s):
+ # set the vertex [s] to true in the visited [v] list 
+ v[s] = true
+ # loop through all successors [t] of the vertex [s] in the graph [G]
+ for t successors of s in G:
+   # if the current vertex [t] is not visited
+   if !v[t]:
+     TopoRec(L,v,G,s)
+ # add the the vertex [s] at the begging of  the order list [L]
+ add s to the begging of T
+
+
+def TopoWarpper(G):
+  #Initialisation
+  # from 0 to the number of vertices perpare a list called visited [v] and set all the values to false
+  for s vertex in G:
+   v[s]= false
+  # prepare an empty list [L] (this will contain the order)
+  L = []
+  
+  # Program
+  # loop through all the vertices of the Graph [for s in vertices of G]
+  for s vertex in G:
+   # if the current vertex is not visited
+   if !v[s]:
+    # Call TopoRec
+    TopoRec(L,v,G,s) 
+return L	
 ```
 
 # SCC (Strongly connected components)
