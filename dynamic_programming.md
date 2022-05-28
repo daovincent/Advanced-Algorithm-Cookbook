@@ -1,6 +1,6 @@
 # Introduction
 
-Dynamic programming is a systematic approach to optimize recursive algorithms. Indeed some algorithms can be improved, think about Fibonacci for example you might want to remember an already calculated result. This is called memoization and it basically consists in recursion + caching your results. So remember : 
+Dynamic programming is a systematic approach to optimize recursive algorithms. Indeed some algorithms can be improved, think about Fibonacci for example. You might want to remember an already calculated result. This is called memoization and it basically consists in recursion + caching your results. So remember : 
 
 ```
 Memoization = recursion + caching
@@ -12,7 +12,9 @@ With also refer to this approach as the top-down approach, you will understand l
 `
 ## Top-down approach (memoization) + Fibonacci
 
-Let’s consider the Fibonacci sequence : U0 =  0, U1 = 1, Un+1 = Un - Un-1. We can code it this way :
+Let’s consider the Fibonacci sequence : U0 =  0, U1 = 1, Un+1 = Un - Un-1. 
+We can code it this way :
+
 
 ```python
 def fib(n: int) -> int:
@@ -52,7 +54,8 @@ Let’s take again the tree above and see the step we spare :
 
 ![FiboTree](/Images/Dynamic_programming/FiboTreeLess.png)
 
-We spared 16 steps out of 24 ! So ⅔ of them which is great. In this case this works great and is easy to understand. Also remember, no solution is perfect and they all have a cost. Here **we trade memory space for time efficiency**. 
+We spared 16 steps out of 24 ! So ⅔ of them which is great. In this case this works great and is easy to understand. 
+Also remember, no solution is perfect and they all have a cost. Here **we trade memory space for time efficiency**. 
 
 To conclude on memoization you should remember :
  * **Memoization = recursion + caching** 
@@ -67,7 +70,7 @@ To conclude on memoization you should remember :
 
 # Bottom-up approach (also known as tabulation)
 
-Bottom-up approach (or tabulation) we iteratively compute the solution of the subproblems from the smallest one to the largest one. In other words, in a recursive algorithm we identify the smallest recursion pattern , and we iterate on it indefinitely. 
+Bottom-up approach (or tabulation) we iteratively compute the solution of the subproblems from the smallest one to the largest one. In other words, in a recursive algorithm we identify the smallest recursion pattern, and we iterate on it indefinitely. 
 
 ## Bottom-up approach with Fibonnaci
 It is doable when we easily know which computations are required. So with Fibonacci, it is straightforward : 
