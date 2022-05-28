@@ -111,9 +111,9 @@ $Cf = {C,F}$</br>
 To find a SCC we will need to run the $Kosaraju’s$ $algorithmus$ or what the teacher like to call it the $Magical$ $algorithmus$ 
 ```
 I- Run a timed-DFS and order the vertices by decreasing end of
-treatment in a list [L].
+treatment in a list [L]. By doing so, you obtains the topological order
 II- Compute the transpose of the Graph [Gt]. 
-III- Run a DFS on [Gt] and save the returned values into sublist in a big list 
+III- Run a DFS on [Gt] by topological order and save the returned values into sublist in a big list 
 Note : every time the dfs run some values will be computed and you will be saving thos value in a sublist 
 when the dfs finishes you save that sub list in a big a list.
 example -> [[A,D,B], [C,F], [E]]
