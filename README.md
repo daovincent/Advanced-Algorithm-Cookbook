@@ -7,6 +7,7 @@ This cookbook was written by ESIPE students, and it contains all the algorithmic
 2. [DFS Applications](/DFS_Applications.md)
 3. [Minimum Spanning Tree](/Minimum_Spanning_Tree.md)
 4. [Max Flow](/Max_Flow.md)
+5. [Dynamic_programming](/dynamic_programming.md)
 
 
 
