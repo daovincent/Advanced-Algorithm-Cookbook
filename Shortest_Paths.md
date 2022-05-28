@@ -125,7 +125,7 @@ Minimum extraction :
 ```
 ### Explanation x Pseudo Code
 ```
-I- prepare a list of that contain distance [d] to some vertex to [-∞]
+I- prepare a list of that contain distance [d] to some vertex to [+∞]
 II- perpare a list of predecessors [π] to ∅
 III- pick a starting vertex [s0] and set it distnace to 0 [d[s0] = 0]
 IV- prepare a list called todo that contains all the vertices [Todo=[all vertices]]
@@ -140,7 +140,7 @@ VII- return π,d
 ```
 Dijktra(G,s0) :
  for v in vertices of G :	
-   d[v] = -∞
+   d[v] = +∞
    π[v] = ∅
  Todo = [all vertices of G]
  While Todo !=  ∅ :
@@ -165,7 +165,7 @@ Over all complexity for listss -> O(|V|x|E|)
 ```
 ### Explanation x Pseudo Code
 ```
-I- loop through all vertices of G and prepare a list that contain the distance[d] to every vertex to[-∞] 
+I- loop through all vertices of G and prepare a list that contain the distance[d] to every vertex to[+∞] 
 and a list that containit predecessors [π] to ∅
 II- set the distance of the starting vertex to 0 [d[s0]=0]
 III- loop from 1 to vertices-1
@@ -179,7 +179,7 @@ IV- return π, d
 ```
 BellManFord(G,s0)
   for v vertices in G
-    d[v] = -∞
+    d[v] = +∞
     π[v] = ∅ 
   d[s0] = 0
   loop from 1 to nBVertices-1
