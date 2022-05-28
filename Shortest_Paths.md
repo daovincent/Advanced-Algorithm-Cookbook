@@ -137,20 +137,22 @@ V- while [Todo] is not empty
 VII- return π,d       
 ```
 ### Pure Pseudo Code 
-```
-Dijktra(G,s0) :
- for v in vertices of G :	
-   d[v] = +∞
-   π[v] = ∅
- Todo = [all vertices of G]
- d[s0] = 0
- While Todo !=  ∅ :
-  s = extract element that minimise d in Todo
-  for s-(w)->t in Edgs of s:
-   if d[s]+w < d[t]:
-     d[t] = d[s]+w
-     π[t] = t
-return π, d    	    
+```py
+def Dijktra(G,s0) :
+  for v in vertices of G :	
+    d[v] = +∞
+    π[v] = ∅
+
+  Todo = [all vertices of G]
+  d[s0] = 0
+  while Todo !=  ∅ :
+    s = extract element that minimise d in Todo
+    for s-(w)->t in Edgs of s:
+      if d[s]+w < d[t]:
+        d[t] = d[s]+w
+        π[t] = t
+
+  return π, d    	    
 ```
 ### Gif
 ![Alt Text](https://cdn.discordapp.com/attachments/909979010409328762/978740365374947368/Dijkstra_Animation.gif)
@@ -177,18 +179,19 @@ III- loop from 1 to vertices-1
 IV- return π, d   
 ```
 ### Pure pseudo Code
-```
-BellManFord(G,s0)
+```py
+def BellManFord(G,s0)
   for v vertices in G
     d[v] = +∞
     π[v] = ∅ 
   d[s0] = 0
-  loop from 1 to nBVertices-1
-   loop x-(w)->y edges of G;
-    if d[x]+w < d[y]
-      d[y] = d[x]+w
-      π[y] = s
-return π, d
+  for _ from 1 to nBVertices-1:
+    for x-(w)->y edges of G:
+      if d[x]+w < d[y]:
+        d[y] = d[x]+w
+        π[y] = s
+
+  return π, d
 ```
 ### Gif
 ![Alt_Text](https://cdn.discordapp.com/attachments/763805435140505660/979412723232305162/output-onlinegiftools.gif)
@@ -216,24 +219,27 @@ III- loop from k to the number of verticies-1
 IV- return π,d
 ```
 ### Pure pseudo code 
-```
-FloydWarshall(G):
-  for s,t vertices of G do 
-   if s == t:
-     d[s,t] = 0
-   else:
-    d[s,t] = +∞
-   π[s,t] = ∅ 
+```py
+def FloydWarshall(G):
+  for s,t vertices of G do:
+    if s == t:
+      d[s,t] = 0
+    else:
+      d[s,t] = +∞
+    π[s,t] = ∅ 
+
   for s-(w)->t edges of G:
-   if s!=t:
-     d[s,t] = w
-     π[s,t] = s
-  for k from 0 to vertices-1
-    for s,t to vertices-1
+    if s!=t:
+      d[s,t] = w
+      π[s,t] = s
+
+  for k from 0 to vertices-1:
+    for s,t to vertices-1:
      if d[s,t] > d[s,k] + d[k,t]:
         d[s,t] = d[s,k] + d[k,t]
+
 	π[s,t] = π[k,t]
-return π,d
+  return π,d
 ```
 ### Gif
 A gif is pointless for this algo just check this video 
