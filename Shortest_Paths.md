@@ -201,7 +201,7 @@ def BellManFord(G,s0)
 ![Alt_Text](https://cdn.discordapp.com/attachments/763805435140505660/979412723232305162/output-onlinegiftools.gif)
 
 # Floyd-Warshall
-Shortest path from one node to all nodes, (negative edges **allowed**)
+Shortest path from all nodes to all nodes, (negative edges **allowed**)
 
 ## Ieiunium explicandum (Quick explanation)
 ### Complexity
