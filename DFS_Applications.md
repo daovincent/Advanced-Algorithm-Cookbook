@@ -31,7 +31,7 @@ I- set the vertex [s] to true in the visited [v] list
 II- loop through all successors [t] of the vertex [s] in the graph [G]
     |- if the current vertex [t] is not visited
     	|- call the RECURSIVE FUNCTION again
-III- add the the vertex [s] at the beggining of  the order list [L]    
+III- add the the vertex [s] at the beginning of  the order list [L]    
 |GLOBAL FUNCTION| (G)
 I- from 0 to the number of vertices perpare a list called visited [v] and set all the values to false
 II- prepare an empty list [L] (this will contain the order)
@@ -47,7 +47,7 @@ def TopoRec(L,v,G,s):
  for t successors of s in G:
    if !v[t]:
      TopoRec(L,v,G,t)
- add s to the begging of L
+ add s to the beginning of L
 
 
 def TopoWarpper(G):
@@ -71,8 +71,8 @@ def TopoRec(L,v,G,s):
    # if the current vertex [t] is not visited
    if !v[t]:
      TopoRec(L,v,G,t)
- # add the the vertex [s] at the beggining of  the order list [L]
- add s to the begging of L
+ # add the the vertex [s] at the beginning of  the order list [L]
+ add s to the beginning of L
 
 
 def TopoWarpper(G):
